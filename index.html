@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+<main class="main">
+  <section class="header">
+    <div class="container position">
+      <div class="front-card">
+        <div class="circles">
+          <div class="filled-circle"></div>
+          <div class="outline-circle"></div>
+        </div>
+        <p class="fc-num">0000 0000 0000 0000</p>
+        <div class="fc-btext">
+          <span class="fc-btntext">Olamiposi Cloud</span>
+          <span class="fc-btnnum"><span class="ex-mm">00</span>/<span class="ex-yy">00</span> </span>
+        </div>
+      </div>
+      <div class="back-card row">
+        <img src="images/bg-card-back.png" class="bc-img cardimg" alt="card back view">
+        <p class="bc-text">000</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase">
+    <div class="container">
+      <form class="inputform">
+        <lable for="username">Cardholder Name</lable>
+
+        <input type="text" id="username" name="userName" class="inputstyle" placeholder=" e.g. Olamiposi Cloud">
+        <p id="error1" class="errormsg"></p> <br />
+        <lable for="cardnumber">Card Number</lable>
+        <input type="text" id="cardnumber" class="inputstyle" name="cardNumber" placeholder=" e.g. 1234 5678 9123 0000"
+          maxlength="19">
+
+        <div class="mergeinputs">
+          <div class="expdate">
+            <label>Exp. Date (MM/YY)</label>
+            <div class="expdate_flex">
+              <input type="text" class="mm inputstyle" placeholder="MM" name="mm" id="Month" maxlength="2">
+              <input type="text" class="yy inputstyle" placeholder="YY" name="yy" id="year" maxlength="2">
+            </div>
+            
+          </div>
+          <div class="mergeinputs-cvc">
+            <label for="cvc">CVC</label><br>
+            <input type="text" id="cvc" class="inputstyle" placeholder="e.g. 123" name="cvc" maxlength="3">
+
+          </div>
+        </div>
+        <input type="submit" class="submit btn" value="Confirm">
+
+      </form>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Olamiposi Cloud</a>.
+  </div>
+  </footer>
+</body>
+</html>
